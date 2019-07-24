@@ -1,0 +1,6 @@
+SELECT DISTINCT G_Level_1,G_Level_2,G_Level_3,G_Level_4,G_Level_5
+,CASE WHEN Region       is null THEN '' ELSE Region       END AS Region
+,CASE WHEN Vendor       is null THEN '' ELSE Vendor       END AS Vendor
+,CASE WHEN Train_Name   is null THEN '' ELSE Train_Name   END AS Train
+,CASE WHEN Wagon_Number is null THEN '' ELSE Wagon_Number END AS Wagon
+FROM 
